@@ -18,8 +18,8 @@ public class MyController {
   @ResponseBody
   @GetMapping("/delete")
   public int delete() {
-    int    deletedRecords = myService.delete("John", 10);
-    return deletedRecords;
+    int    success = myService.delete("John", 10);
+    return success;
   }
 
 
